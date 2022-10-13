@@ -29,7 +29,7 @@
             />
           </div>
           <div class="col-sm-4">
-            <button class="btn brn-dark mb-2" type="submit">Shrink</button>
+            <button class="btn btn-primary mb-2" type="submit">Shrink</button>
           </div>
         </div>
       </form>
@@ -37,7 +37,7 @@
         <thead>
           <th>URL</th>
           <th>Short URL</th>
-          <th>Clicks</th>
+          <th class="text-center">Clicks</th>
         </thead>
         <tbody>
           <% shortUrls.forEach(shortUrl => { %>
@@ -48,7 +48,7 @@
             <td>
               <a href="<%= shortUrl.short %>"><%= shortUrl.short %></a>
             </td>
-            <td><%= shortUrl.clicks %></td>
+            <td class="text-center"><%= shortUrl.clicks %></td>
           </tr>
           <% }) %>
         </tbody>
